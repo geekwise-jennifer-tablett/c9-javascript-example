@@ -1,14 +1,12 @@
 body{
     background-color:lightblue;
 }
-#input_box{
-    font-size:30px;
-    height:30px;
-    text-align:center;
+
+ul{
+    border:solid pink 1px;
+    height:5rem;
+    width:100%;
 }
-div{
-    display:block;
-    height: 20rem;
-    width:40rem;
-    border-radius: 1px;
+li{
+    color:white;
 }
