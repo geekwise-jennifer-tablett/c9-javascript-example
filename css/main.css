@@ -10,3 +10,6 @@ ul{
 li{
     color:white;
 }
+input{
+    border:solid orange 1px;
+}
