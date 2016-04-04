@@ -10,7 +10,15 @@ for(var i=10, i<50, i++){
  list_element.textContent = 'item#'+i;
  ul_id.appendChild(list_element);
 }
+*/
+
 var createElement(input_tag,'change_color');
+  setAttribute('type','text');
+  setAtribute('value','input_tag')
+
+
+
+
 var createElement(input_tag,'DeleteElement');
 
 document.addEventListener('DOMContentListener',function(event){
