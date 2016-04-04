@@ -1,29 +1,21 @@
-var ul = document.createElement('ul');
-var li = document.createElement('li', 'l_1,l_2,l_3,l_4');
+var createElement(ul);
+var createElement[li '10-50'];
 
-document.addEventListener('DOMContentLoaded',function(event){
- console.log(event);
-   
-    document.body.appendChild(ul);
-     
-           
-     for(var i =0; i < 4; i ++){
-       var li = document.createElement('li');
-            li.innerhtml = i ;
-            ul.appendChild(li);
-            li.textContent = 'hello my baby';
-            li.textContent = 'hello my darling';
-            li.textContent = 'hellow my sweety pie';
-            li.textContent = 'ribbit'
-        }
-   });
+var createElement(input_tag,'createElement');
+/*
+for(var i=10, i<50, i++){
+ var list_element = document.createElement('li');
+ list_element.setAttribute(Attribute('id', 'list_id_',+i);
+ list_element.textContent = 'item#'+i;
+ ul_id.appendChild(list_element);
+}
+var createElement(input_tag,'change_color');
+var createElement(input_tag,'DeleteElement');
+
+document.addEventListener('DOMContentListener',function(event){
+ console.log(this);
  
-
- 
- 
-
-
-
+})
  
  
 
