@@ -2,14 +2,8 @@ body{
     background-color:lightblue;
 }
 
-ul{
-    border:solid pink 1px;
-    height:5rem;
-    width:100%;
-}
-li{
-    color:white;
-}
-input{
-    border:solid orange 1px;
+#big_button{
+    border:solid pink 3px;
+   height: 5rem;
+   width:8rem;
 }
