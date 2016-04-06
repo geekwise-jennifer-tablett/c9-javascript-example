@@ -12,7 +12,8 @@ var add_images = function(number_of_images){
 };
 
 document.addEventListener('DOMContentLoaded', function(event){
-    add_images(68);
+    add_images(68
+    consol.log(this);
 });
 
 
