@@ -10,7 +10,7 @@ var add_images = function(number_of_images){
         document.body.appendChild(image);
     };
 };
-
+// test
 document.addEventListener('DOMContentLoaded', function(event){
     add_images(68);
     console.log(this);
