@@ -13,7 +13,7 @@ var add_images = function(number_of_images){
 // test
 document.addEventListener('DOMContentLoaded', function(event){
     add_images(68);
-    console.log(this);
+    console.log('updated github');
 });
 
 
