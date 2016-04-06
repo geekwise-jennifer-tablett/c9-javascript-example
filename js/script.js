@@ -1,5 +1,23 @@
 var big_button;
-var background_button
+
+/*lets see if this works*/
+var speed = prompt ('speed limit is 55', 55);
+    if(speed >= 55){
+        alert('congrats, you just donated the city your hard earned cash');
+    }else{
+        alert('go faster, the city wants your cash');
+    }
+    
+    
+
+
+  
+
+
+
+
+
+
 
 
 var change_button_color = function(change_button_color){
@@ -32,7 +50,14 @@ document.addEventListener('DOMContentLoaded',function(event){
         
     });
     
+   
     
+    
+/*just wondering if this works could be fun to mess with*/
+
+  
+   
+
 });
 
 
