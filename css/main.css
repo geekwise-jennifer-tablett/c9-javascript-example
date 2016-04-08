@@ -20,14 +20,18 @@ section[id^=img_container_]{
     padding:10px;
     float:left;
     display:block;
+    position:relative;
 }
 
 span[id^=img_info_container_]{
+    margin:0 auto;
+    height:225px;
+    width:225px;
     transition:1s;
     background-color:grey;
     transform:rotateY(0deg);
     position:absolute;
-    left:5rem;
+    left:-3rem;
     text-align:center;
 
 }
