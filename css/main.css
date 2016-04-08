@@ -1,4 +1,41 @@
-img{
-    height: auto;
-    width:25%;
+.photo_container {
+  -webkit-perspective:;
+  margin:0;
+  height: 10%;
+ 
+  position: relative;
+  
+}
+
+.photo_container .img_flip {
+  -webkit-transform: rotatex(-180deg);
+}
+
+.photo_container .img_flip {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+
+.photo_container .img_flip .info_flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+}
+
+.photo_container .img_flip .info_flip {
+  position: absolute;
+  z-index: 1;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.photo_container .img_flip .info_flip {
+  -webkit-transform: rotatex(-180deg);
+  background: white;
+  cursor: pointer;
 }
