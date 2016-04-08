@@ -1,3 +1,4 @@
+//creates element
 var card_flip = function(){
       this.classList.toggle('on');
       this.classList.toggle('off');
@@ -6,10 +7,10 @@ var card_flip = function(){
 var create_images = function(){
 
   
-
+        //makes multiple objects
         for(var i=1;i<=68;i++){
                
-               
+                //where img is
                 var image_container = document.createElement('section');
                 
                 image_container.setAttribute('id','img_container_'+i);
@@ -26,7 +27,7 @@ var create_images = function(){
                 
                 image.addEventListener('click',function(event){
                    
-                      
+                      //sets toggle up
                       if(this.getAttribute('class') === 'on'){
                               this.setAttribute('class','off');
                               this.parentElement.children[1].setAttribute('class','on');
@@ -53,14 +54,15 @@ var create_images = function(){
                 image_container.appendChild(image);
                 
                 
-                
+                //creates backside of cardflip
                 var image_info = document.createElement('span');
                 
                 image_info.setAttribute('id','img_info_container_'+i);
                 image_info.classList.add('off');
                 
-                
+                //when image is clicked-show the opposite side
                 image_info.addEventListener('click',function(event){
+                     
                         
                      if(this.getAttribute('class') === 'on'){
                               this.setAttribute('class','off');
@@ -83,11 +85,23 @@ var create_images = function(){
                 
                 
                 
-                
+                //links
                 
                 var image_info_github_link = document.createElement('a');
                 var image_info_twitter_link = document.createElement('a');
                 
+                //icons
+                
+                var twitter_icon = document.createElement('i');
+                twitter_icon.setAttribute('id','twitter_'+i);
+                twitter_icon.setAttribute('class','fa fa-twitter');
+                
+                
+                var github_icon = document.createElement('i');
+                github_icon.setAttribute('id','github_'+i);
+                github_icon.setAttribute('id','fa fa-github-alt'+i)
+                
+                //link attributes
                 image_info_github_link.setAttribute('id','img_info_github_link_'+i);
                 image_info_github_link.setAttribute('href','http://www.github.com/geekwise');
                 image_info_github_link.textContent = 'github link '+i;
@@ -96,9 +110,13 @@ var create_images = function(){
                 image_info_twitter_link.setAttribute('href','http://www.twitter.com/climateamante');
                 image_info_twitter_link.textContent = 'twitter link'+i;
                 
+                
+                //connect to body
                 image_container.appendChild(image_info);
                 image_info.appendChild(image_info_github_link);
                 image_info.appendChild(image_info_twitter_link);
+                image_info_twitter_link.appendChild(twitter_icon);
+                image_info_github_link.appendChild(github_icon);
                 
                 
                 
@@ -111,7 +129,7 @@ var create_images = function(){
 
 }
 
-
+//tells browser to load
 document.addEventListener('DOMContentLoaded',function(event){
 
         create_images();
