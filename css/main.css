@@ -1,3 +1,42 @@
+body{
+    background-color:pink;
+    width:100%;
+    margin:0 auto;
+}
+
+
+
+section[id^=img_container_]{
+    margin:0;
+    padding:0;
+    float:left;
+    display:block;
+}
+
+span[id^=img_info_container_]{
+    transition:1s;
+    background-color:grey;
+    transform:rotateY(0deg);
+}
+
+.off{
+    transition:1s;
+    opacity:0;
+    transform:rotateY(180deg);
+}
+
+.on{
+    transition:1s;
+    opacity:1;
+    display:inline-block;
+    transform:rotateY(0deg);
+}
+
+
+
+
+
+/*
 .photo_container {
   -webkit-perspective:;
   margin:0;
@@ -39,3 +78,4 @@
   background: white;
   cursor: pointer;
 }
+*/
