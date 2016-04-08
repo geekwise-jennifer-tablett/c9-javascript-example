@@ -4,19 +4,29 @@ body{
     margin:0 auto;
 }
 
-
+a{
+  background-color:yellow;
+  font-size:30px;
+  text-decoration: none;
+}
 
 section[id^=img_container_]{
     margin:0;
-    padding:0;
+    padding:10px;
+    height: 225px;
+    width:auto;
     float:left;
-    display:block;
+    display:inline-block;
 }
 
 span[id^=img_info_container_]{
     transition:1s;
     background-color:grey;
     transform:rotateY(0deg);
+    position:absolute;
+    left:5rem;
+    text-align:center;
+
 }
 
 .off{
