@@ -4,6 +4,11 @@ body{
     margin:0 auto;
 }
 
+img{
+  height: 225px;
+  width:225px;
+}
+
 a{
   background-color:yellow;
   font-size:30px;
@@ -13,10 +18,8 @@ a{
 section[id^=img_container_]{
     margin:0;
     padding:10px;
-    height: 225px;
-    width:auto;
     float:left;
-    display:inline-block;
+    display:block;
 }
 
 span[id^=img_info_container_]{
