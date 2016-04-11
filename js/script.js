@@ -99,7 +99,7 @@ var create_images = function(){
                 
                 var github_icon = document.createElement('i');
                 github_icon.setAttribute('id','github_'+i);
-                github_icon.setAttribute('id','fa fa-github-alt2'+i)
+                github_icon.setAttribute('id','fa fa-github-alt22'+i)
                 
                 //link attributes
                 image_info_github_link.setAttribute('id','img_info_github_link_'+i);

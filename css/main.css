@@ -11,14 +11,19 @@ img{
 /*targets links*/
 a{
   background-color:yellow;
-  font-size:30px;
+  font-size:16px;
   text-decoration: none;
+  position: relative;
+  top:12rem;
 }
 
 
 /*icons*/
 twitter{
   color:#6ac3dd;
+}
+github{
+  
 }
 /*front side of card*/
 section[id^=img_container_]{
