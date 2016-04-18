@@ -1,0 +1,24 @@
+calc_body{
+    margin:0;
+}
+input_element_container{
+    height: 3rem;
+    width:6rem;
+    background-image: url(http://i.imgur.com/iVOiZfR.jpg);
+}
+
+#display{
+    height: 2rem'
+    width:5rem;
+   
+    background-color:#004223;
+}
+.pressed{
+    color:white;
+    transition:.4s;
+}
+
+.released{
+     color:black;
+     transition:.4s;
+}
