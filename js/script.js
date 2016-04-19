@@ -204,7 +204,10 @@ document.addEventListener('DOMContentLoaded',function(event){
     });
     
     //making backspace button work
-
+current_number.addEventListener('click',function(event){
+            this.remove();
+            
+        });
    
     // backspace_button.addEventListener('click',function(event) {
     // display.value = document.getElementById('current_number_element').value; 
