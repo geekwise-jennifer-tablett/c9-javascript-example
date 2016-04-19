@@ -1,17 +1,12 @@
-calc_body{
-    margin:0;
-}
-input_element_container{
-    height: 3rem;
-    width:6rem;
-    background-image: url(http://i.imgur.com/iVOiZfR.jpg);
-}
+
+
 
 #display{
-    height: 2rem'
-    width:5rem;
-   
-    background-color:#004223;
+    height: 4rem;
+    width:20rem;
+    color:#ffffff;
+    background-color:#282a2d;
+    border-bottom-style: inset;
 }
 .pressed{
     color:white;

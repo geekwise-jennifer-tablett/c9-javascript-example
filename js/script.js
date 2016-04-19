@@ -34,7 +34,7 @@ operator_buttons = [
 
 //calculator body design
 calc_body = document.createElement('div');
-calc_body.style.backgroundColor = '#130f7e';
+calc_body.style.backgroundColor = '#46619c';
 calc_body.style.width = '20rem';
 calc_body.style.height = '40rem';
 
