@@ -4,10 +4,12 @@ var input_element_container;
 var input_element;
 var clear_container;
 var clear_button;
+var backspace_button;
 var number_container;
 var number_buttons;
 var operator_container;
 var operator_buttons;
+
 
 //array for intergers
 number_buttons = [
@@ -67,7 +69,7 @@ var create_operators_element = function(operator_element_type,operator_element_i
     
 };
 
-
+//recognizes keyboard data
 var check_keyboard_value = function(value_to_check){
     
       return value_to_check.match(/\d/gi);  
@@ -166,15 +168,18 @@ document.addEventListener('DOMContentLoaded',function(event){
     //  calc_body.appendChild(number_container);
     //  calc_body.appendChild(operator_container);
    
-   //create equal button and clear button
+   //create equal button clear button backspace
     create_numbers_element('button','equal_button');
     create_numbers_element('button','clear_button');
+    create_numbers_element('button','backspace_button');
     
     var equal_button = document.getElementById('equal_button');
     var clear_button = document.getElementById('clear_button');
+    var backspace_button = document.getElementById('backspace_button');
 
     equal_button.textContent = '=';
     clear_button.textContent = 'C';
+    backspace_button.textContent = 'B';
     
     
    
@@ -197,6 +202,23 @@ document.addEventListener('DOMContentLoaded',function(event){
         console.log(this);
         display.value = null;
     });
+    
+    //making backspace button work
+
+   
+    // backspace_button.addEventListener('click',function(event) {
+    // display.value = document.getElementById('current_number_element').value; 
+    // display.value = this.length-1;
+    // newnum=this.substring(0,current_number_element);
+    // document.getElementById('current_number_element').value=newnum;
+   
+    //   if(display.value == display.value.length){
+    //       display.value.length - 1
+    //   }; 
+    //   lnth=.length-1;
+    //   =numbers.substring(0,lnth);
+    //   document.getElementById('num1').value=newnum;
+//});
     
 });
   
