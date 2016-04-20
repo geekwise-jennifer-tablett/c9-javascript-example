@@ -21,10 +21,13 @@ body{
     background-color:green;
 }
 #top_container{
-    margin:0 auto;
+    margin:0;
     height:5rem;
-    width:20rem;
+    width:15rem;
     display:block;
+    position: relative;
+    left:14.7rem;
+
     background-color:pink;
 }
 #number_container{
@@ -37,11 +40,11 @@ body{
     background-color:yellow;
 }
 #operator_container{
-    height:20rem;
+    height:25rem;
     width:5rem;
     display: block;
     position: relative;
-    top:-20rem;
+    top:-25rem;
     left:29.8rem;
     background-color:white;
 }
@@ -72,6 +75,14 @@ button{
     color:#3A3924;
     opacity:.8;
     background-color:#ffffff;
+}
+
+/*top container*/
+#clear_button{
+    
+    background-color:#ff940f;
+    color:#ffffff;
+    border:none;
 }
 
 /*operator buttons*/
@@ -107,11 +118,7 @@ button{
     border:none;
 }
 
-#clear_button{
-    background-color:#ff940f;
-    color:#ffffff;
-    border:none;
-}
+
 #backspace_button{
     background-color:#ff940f;
     color:#ffffff;
