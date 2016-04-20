@@ -1,7 +1,7 @@
 var calc_body;
 var input_element_container;
 var input_element;
-var clear_container;
+var top_container;
 var clear_button;
 var backspace_button;
 var number_container;
@@ -24,13 +24,22 @@ number_buttons = [
     '0'
  ];
 
-//array for operations
+//array for top side operations
+operator_buttons = [
+    
+    'AC',
+    '%',
+    '/',
+    'B'
+    
+];
+
+//array for right side operations
 operator_buttons = [
     
     '+',
     '-',
-    '*',
-    '/'
+    '*'
 ];
 
 //calculator body design
@@ -39,6 +48,9 @@ operator_buttons = [
 //setting id for containers
 input_element = document.createElement('input');
 input_element.setAttribute('id','display');
+
+top_container = document.createElement('div');
+top_container.setAttribute('id','number_container');
 
 number_container = document.createElement('div');
 number_container.setAttribute('id','number_container');
@@ -173,7 +185,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     var backspace_button = document.getElementById('backspace_button');
 
     equal_button.textContent = '=';
-    clear_button.textContent = 'C';
+    clear_button.textContent = 'AC';
     backspace_button.textContent = 'B';
     
     
@@ -199,12 +211,22 @@ document.addEventListener('DOMContentLoaded',function(event){
     });
     
     //making backspace button work
-// current_number.addEventListener('click',function backspace() {
-//   current_number = document.calc.display.value
-//   current_number.length = current_numbervalue.length
-//   current_number.value = current_number.value.substring(0,curlength-1)
-//   document.calc.display.value = current_number.value
-// }
+ backspace_button.addEventListener('click',function(event){
+            console.log(display.value);
+            var current_value = display.value.split('');
+            var new_value = new String;
+
+            for(var i =0; i < display.value.length - 1 ; i++){
+            	 new_value += current_value[i]; 
+            }
+
+            display.value = new_value;
+            
+        });
+        
+
+//  var current_number
+
    
     // backspace_button.addEventListener('click',function(event) {
     // display.value = document.getElementById('current_number_element').value; 
