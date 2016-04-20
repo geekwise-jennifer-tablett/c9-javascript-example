@@ -15,6 +15,30 @@ body{
     font-family: 'Roboto', sans-serif;
     border-bottom-style: inset;
 }
+calc_body{
+    margin:0 auto;
+    height:40rem;
+    width:20rem;
+    background-color:#ffffff;
+    border-radius: 10px;
+    display:inline-block;
+    box-shadow:2px 2px 2px #f2f2f2 ;
+}
+number_container{
+    margin-left:36px;
+    height:30rem;
+    width:60%;
+    display:block;
+    float:left;
+    background-color:#ffffff;
+}
+operator_container{
+    height:30rem;
+    width:22%;
+    display: block;
+    float:left;
+    background-color:white;
+}
 button{
      background-color:white;
     width:70px;
@@ -27,6 +51,17 @@ button{
     border:1px solid #56503A;
     font-family: 'Yantramanav', sans-serif;
     opacity:.8;
+}
+button[id^=number_button_]:hover{
+    background-color: #ece0e0;
+}
+
+button[id^=operator_button_]{
+    background-color:#CCC3AC;
+}
+
+button[id^=operator_button_]:hover{
+    background-color:#c3b9b9;
 }
 .pressed{
     color:white;

@@ -1,4 +1,3 @@
-//creating element
 var calc_body;
 var input_element_container;
 var input_element;
@@ -35,10 +34,7 @@ operator_buttons = [
 ];
 
 //calculator body design
-calc_body = document.createElement('div');
-calc_body.style.backgroundColor = '#46619c';
-calc_body.style.width = '20rem';
-calc_body.style.height = '40rem';
+  calc_body = document.createElement('div');
 
 //setting id for containers
 input_element = document.createElement('input');
@@ -95,7 +91,7 @@ var listen_for_keycode = function(){
             var current_key_number_pressed = document.getElementById(('number_button_'+parseInt(key_pressed[0]-1)));
             
             
-            //current_key_number_pressed.setAttribute('class','pressed')
+           
             
             
            display.value += event.code.match(/\d/gi); 
@@ -143,7 +139,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         
         current_number_element.textContent = number_buttons[i];
         
-        // number_container.appendChild(current_number_element);
+      
         
     };
     
@@ -165,8 +161,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         // operator_container.appendChild(current_operator_element);
     };
     
-    //  calc_body.appendChild(number_container);
-    //  calc_body.appendChild(operator_container);
+   
    
    //create equal button clear button backspace
     create_numbers_element('button','equal_button');
@@ -204,10 +199,12 @@ document.addEventListener('DOMContentLoaded',function(event){
     });
     
     //making backspace button work
-current_number.addEventListener('click',function(event){
-            this.remove();
-            
-        });
+// current_number.addEventListener('click',function backspace() {
+//   current_number = document.calc.display.value
+//   current_number.length = current_numbervalue.length
+//   current_number.value = current_number.value.substring(0,curlength-1)
+//   document.calc.display.value = current_number.value
+// }
    
     // backspace_button.addEventListener('click',function(event) {
     // display.value = document.getElementById('current_number_element').value; 
