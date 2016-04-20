@@ -24,33 +24,30 @@ number_buttons = [
     '0'
  ];
 
-//array for top side operations
-operator_buttons = [
-    
-    'AC',
-    '%',
-    '/',
-    'B'
-    
-];
+
 
 //array for right side operations
 operator_buttons = [
-    
     '+',
     '-',
-    '*'
+    '*',
+    '/',
+    '%'
 ];
 
 //calculator body design
   calc_body = document.createElement('div');
 
-//setting id for containers
+//creating input
 input_element = document.createElement('input');
 input_element.setAttribute('id','display');
 
+//setting id for containers
+input_element_container = document.createElement('div');
+input_element_container.setAttribute('id','input_element_container');
+
 top_container = document.createElement('div');
-top_container.setAttribute('id','number_container');
+top_container.setAttribute('id','top_container');
 
 number_container = document.createElement('div');
 number_container.setAttribute('id','number_container');
@@ -102,26 +99,10 @@ var listen_for_keycode = function(){
             
             var current_key_number_pressed = document.getElementById(('number_button_'+parseInt(key_pressed[0]-1)));
             
-            
-           
-            
-            
-           display.value += event.code.match(/\d/gi); 
+            display.value += event.code.match(/\d/gi); 
         }
-        
-        
     })
-    
-    
-    
-    
-    
 };
-
-
-
-
-
 
 //when webpage loads
 document.addEventListener('DOMContentLoaded',function(event){
@@ -129,9 +110,13 @@ document.addEventListener('DOMContentLoaded',function(event){
     listen_for_keycode();
     
     document.body.appendChild(calc_body);
-    calc_body.appendChild(input_element);
+    calc_body.appendChild(input_element_container);
+    input_element_container.appendChild(input_element);
+    calc_body.appendChild(top_container);
     calc_body.appendChild(number_container);
     calc_body.appendChild(operator_container);
+    
+    
     
    var display = document.getElementById('display');
     
@@ -150,10 +135,8 @@ document.addEventListener('DOMContentLoaded',function(event){
         });
         
         current_number_element.textContent = number_buttons[i];
-        
-      
-        
     };
+    
     
     //loop for operator buttons
     for(var i=0; i<operator_buttons.length; i++){
@@ -170,7 +153,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         
         current_operator_element.textContent = operator_buttons[i];
         
-        // operator_container.appendChild(current_operator_element);
+        
     };
     
    

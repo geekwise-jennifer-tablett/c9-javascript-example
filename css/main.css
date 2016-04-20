@@ -3,8 +3,52 @@ body{
     text-align:center;
     background-color:#d2d2d2;
 }
+#calc_body{
+    margin:0 auto;
+    height:20rem;
+    width:10rem;
+    background-color:#ffffff;
+    border-radius: 10px;
+    display:inline-block;
+    box-shadow:2px 2px 2px #f2f2f2 ;
+}
+
+/*containers*/
+#input_element_container{
+    margin:0 auto;
+    height: 10rem;
+    width:20rem;
+    background-color:green;
+}
+#top_container{
+    margin:0 auto;
+    height:5rem;
+    width:20rem;
+    display:block;
+    background-color:pink;
+}
+#number_container{
+    margin:0 auto;
+    height:20rem;
+    width:15rem;
+    display:block;
+    position: relative;
+    left:-2.5rem;
+    background-color:yellow;
+}
+#operator_container{
+    height:20rem;
+    width:5rem;
+    display: block;
+    position: relative;
+    top:-20rem;
+    left:29.8rem;
+    background-color:white;
+}
+
+/*display*/
 #display{
-    width:80%;
+    width:20rem;
     height:4rem;
     border:none;
     background-color:#ffffff;
@@ -15,54 +59,68 @@ body{
     font-family: 'Roboto', sans-serif;
     border-bottom-style: inset;
 }
-calc_body{
-    margin:0 auto;
-    height:40rem;
-    width:20rem;
-    background-color:#ffffff;
-    border-radius: 10px;
-    display:inline-block;
-    box-shadow:2px 2px 2px #f2f2f2 ;
-}
-number_container{
-    margin-left:36px;
-    height:30rem;
-    width:60%;
-    display:block;
-    float:left;
-    background-color:#ffffff;
-}
-operator_container{
-    height:30rem;
-    width:22%;
-    display: block;
-    float:left;
-    background-color:white;
-}
+/*buttons*/
 button{
-     background-color:white;
-    width:70px;
-    height:70px;
-    font-size:3.5rem;
-    color:#3A3924;
-    display:inline-block;
     margin:2px;
+    height:70px;  
+    width:70px;
+    display:inline-block;
+    font-size:3.5rem;
     border-radius: 35px;
     border:1px solid #56503A;
     font-family: 'Yantramanav', sans-serif;
+    color:#3A3924;
     opacity:.8;
-}
-button[id^=number_button_]:hover{
-    background-color: #ece0e0;
+    background-color:#ffffff;
 }
 
-button[id^=operator_button_]{
-    background-color:#CCC3AC;
+/*operator buttons*/
+#operator_button_0{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_1{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_2{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_3{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_4{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
 }
 
-button[id^=operator_button_]:hover{
-    background-color:#c3b9b9;
+#equal_button{
+    background-color:#595b58;
+    color:#ffffff;
+    border:none;
 }
+
+#clear_button{
+    background-color:#ff940f;
+    color:#ffffff;
+    border:none;
+}
+#backspace_button{
+    background-color:#ff940f;
+    color:#ffffff;
+    border:none;
+}
+
+
+
+/*
 .pressed{
     color:white;
     transition:.4s;
@@ -72,3 +130,4 @@ button[id^=operator_button_]:hover{
      color:black;
      transition:.4s;
 }
+*/
